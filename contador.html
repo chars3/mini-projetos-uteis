@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="contador"></span>
+
+<script>
+let count = 0;
+const total = 100; 
+const span = document.querySelector('span'); 
+
+function updateCounter() {
+    if (count < total) {
+        count++; 
+        span.innerText = count; 
+        setTimeout(updateCounter, 10); 
+    }
+}
+
+updateCounter(); // Inicia a contagem
+</script>
+</body>
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Document</title>
+    <style>
+        .c-roadmap-container {
+            width: 800px;
+            /* border: solid 1px blue; */
+            display: flex;
+            gap: 32px;
+        }
+
+        .c-year-container {
+            /* border: solid 1px yellow; */
+            display: flex;
+            /* align-items: flex-end; */
+            width: 100px;
+            position: relative;
+        }
+
+        .c-divider {
+            height: 100%;
+            z-index: 2;
+        }
+
+
+        .divider-1 {
+            /* background-color: #eb7f7f; */
+            width: 49px;
+            height: 100%;
+            z-index: 2;
+        }
+
+        .divider-2 {
+            /* border-left: 2px solid #3057F2; */
+            /* background-color: #7feb91; */
+            width: 51px;
+            height: 100%;
+            z-index: 2;
+        }
+
+        .c-year {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #3057F2;
+            width: 50px;
+            height: 20px;
+            background-color: #fff;
+            position: absolute;
+            border: solid 2px #3057F2;
+            border-radius: 16px;
+            padding: 5px 20px;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            z-index: 9;
+        }
+
+        .c-text {
+            padding: 20px 0;
+            /* border: solid 1px green; */
+        }
+
+        .c-roadmap-wrapper:first-child .c-year-container {
+            align-items: flex-end;
+        }
+
+        .c-roadmap-wrapper .c-roadmap-container:last-child .c-year-container {
+            align-items: flex-start;
+        }
+
+
+        .c-roadmap-container:first-child .divider-2 {
+            /* background-color: cadetblue; */
+            height: 50%;
+        }
+
+        .c-roadmap-container:last-child .divider-2 {
+            /* background-color: red; */
+            height: 50%;
+        }
+
+        /* //////////////////// */
+
+        .app {
+            width: 600px;
+            height: 600px;
+            background-color: #efefef;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="c-roadmap-wrapper">
+        <div class="c-roadmap-container">
+            <div class="c-year-container">
+                <div class="c-divider divider-1"></div>
+                <div class="c-divider divider-2"></div>
+                <div class="c-year">
+                    2009
+                </div>
+
+            </div>
+            <div class="c-text">
+                <p>Em 2009 como um sistema interno, para suprir uma dor particular num call center de cobrança. Depois
+                    maximizada para cessar a mesma dor no mercado externo.</p>
+            </div>
+        </div>
+        <div class="c-roadmap-container">
+            <div class="c-year-container">
+                <div class="c-divider divider-1"></div>
+                <div class="c-divider divider-2"></div>
+                <div class="c-year">
+                    2011
+                </div>
+
+            </div>
+            <div class="c-text">
+                <p>Desenvolvemos um sistema CRM Web e, em seguida, soluções de telefonia IP como Pabx, Discador
+                    Automático (beta), números receptivos e até envio de mensagens SMS.</p>
+            </div>
+        </div>
+        <div class="c-roadmap-container">
+            <div class="c-year-container">
+                <div class="c-divider divider-1"></div>
+                <div class="c-divider divider-2"></div>
+                <div class="c-year">
+                    2012
+                </div>
+
+            </div>
+            <div class="c-text">
+                <p>Começamos a comercialização do sistema de maneira não integrada.</p>
+            </div>
+        </div>
+        <div class="c-roadmap-container">
+            <div class="c-year-container">
+                <div class="c-divider divider-1"></div>
+                <div class="c-divider divider-2"></div>
+                <div class="c-year">
+                    2014
+                </div>
+
+            </div>
+            <div class="c-text">
+                <p>Reunimos todas as soluções em um único sistema e então foi fundada a 3C Plus como empresa, que até então se chamava Fluxo TI.</p>
+            </div>
+        </div>
+        <div class="c-roadmap-container">
+            <div class="c-year-container">
+                <div class="c-divider divider-1"></div>
+                <div class="c-divider divider-2"></div>
+                <div class="c-year">
+                    2015
+                </div>
+
+            </div>
+            <div class="c-text">
+                <p>Tivemos nosso MVP validado e 200 licenças ativas.</p>
+            </div>
+        </div>
+        <div class="c-roadmap-container">
+            <div class="c-year-container">
+                <div class="c-divider divider-1"></div>
+                <div class="c-divider divider-2"></div>
+                <div class="c-year">
+                    2018
+                </div>
+
+            </div>
+            <div class="c-text">
+                <p>Foi dado início ao desenvolvimento da V2 do sistema.</p>
+            </div>
+        </div>
+        <div class="c-roadmap-container">
+            <div class="c-year-container">
+                <div class="c-divider divider-1"></div>
+                <div class="c-divider divider-2"></div>
+                <div class="c-year">
+                    2020
+                </div>
+
+            </div>
+            <div class="c-text">
+                <p>Crescimento de 130% do MRR em relação aos anos anteriores.</p>
+            </div>
+        </div>
+        <div class="c-roadmap-container">
+            <div class="c-year-container">
+                <div class="c-divider divider-1"></div>
+                <div class="c-divider divider-2"></div>
+                <div class="c-year">
+                    2021
+                </div>
+
+            </div>
+            <div class="c-text">
+                <p>Prêmio Sebrae como Startup Referência, com crescimento em mais de 250%.</p>
+            </div>
+        </div>
+        <div class="c-roadmap-container">
+            <div class="c-year-container">
+                <div class="c-divider divider-1"></div>
+                <div class="c-divider divider-2"></div>
+                <div class="c-year">
+                    2022
+                </div>
+
+            </div>
+            <div class="c-text">
+                <p>Prêmio Sebrae como Startup Referência, com crescimento em mais de 250%.</p>
+            </div>
+        </div>
+        <div class="c-roadmap-container">
+            <div class="c-year-container">
+                <div class="c-divider divider-1"></div>
+                <div class="c-divider divider-2"></div>
+                <div class="c-year">
+                    2023
+                </div>
+
+            </div>
+            <div class="c-text">
+                <p>Nos tornamos uma solução all-in-one, contando com Discador Automático, SMS, rotas de telefonia, WhatsApp, CRM, PABX, URA e Receptivo. </p>
+            </div>
+        </div>
+    </div>
+<!-- 
+    <div id="app">
+        <div class="cont" @mousedown="mouseDown" @mousemove="mouseMove" @mouseup="mouseUp" @mouseleave="mouseUp">{{valor}}
+            <div v-for="(div, index) in divs" :key="index" 
+            class="nova-div"
+            :style="{ top: div.y + 'px', left: div.x + 'px' }"></div>
+        </div>
+    </div> -->
+
+    
+
+    <div id="app">
+        <canvas 
+            ref="canvas" 
+            width="600" height="400" 
+            @mousedown="startDrawing" 
+            @mousemove="draw" 
+            @mouseup="stopDrawing"
+            @mouseleave="stopDrawing"
+            style="border:1px solid #000;">
+        </canvas>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script>
+    const { createApp, ref, onMounted } = Vue;
+    createApp({
+        setup() {
+            const isDrawing = ref(false);
+            const canvas = ref(null);
+            const context = ref(null);
+
+            onMounted(() => {
+                canvas.value = document.querySelector('canvas');
+                context.value = canvas.value.getContext('2d');
+            });
+
+            const startDrawing = event => {
+                isDrawing.value = true;
+                context.value.beginPath();
+                context.value.moveTo(
+                    event.offsetX,
+                    event.offsetY
+                );
+            };
+
+            const draw = event => {
+                if (isDrawing.value) {
+                    context.value.lineTo(
+                        event.offsetX,
+                        event.offsetY
+                    );
+                    context.value.stroke();
+                }
+            };
+
+            const stopDrawing = () => {
+                isDrawing.value = false;
+            };
+
+            return {
+                startDrawing,
+                draw,
+                stopDrawing
+            };
+        }
+    }).mount('#app');
+</script>
+
+
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        const { createApp, ref } = Vue;
+        createApp({
+            setup() {
+                const divs = ref([]);
+                const valor = ref(0);
+                const isMouseDown = ref(false); 
+    
+                const mouseDown = (event) => {
+                    isMouseDown.value = true; 
+                    adicionarDiv(event); 
+                };
+    
+                const mouseMove = (event) => {
+                    if (isMouseDown.value) {
+                        adicionarDiv(event); 
+                    }
+                };
+    
+                const mouseUp = () => {
+                    isMouseDown.value = false;
+                };
+    
+                const adicionarDiv = (event) => {
+                    const x = event.offsetX - 5;
+                    const y = event.offsetY - 5;
+                    divs.value.push({ x, y });
+                };
+    
+                return {
+                    valor,
+                    divs,
+                    mouseDown,
+                    mouseMove,
+                    mouseUp
+                };
+            }
+        }).mount('#app');
+    </script> -->
+    
+</body>
+
+<style>
+    #app {
+        width: 600px;
+        height: 600px;
+        background-color: #efefef;
+        position: relative; 
+    }
+    .nova-div {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: green;
+    }
+
+    .cont {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+</html>
