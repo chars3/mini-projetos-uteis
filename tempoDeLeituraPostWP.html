@@ -1,0 +1,33 @@
+<script>
+    fetch('http://localhost/backup-site//wp-json/wp/v2/posts?per_page=3&_embed')
+        .then(response => response.json())
+        .then(posts => {
+            const post = posts[2];
+            displayPostInfo(post);
+    });
+    
+    
+    function calculateReadingTime(html) {
+        const text = html.replace(/<[^>]*>/g, '');
+        console.log(text)
+        const wordsPerMinute = 400; 
+        const textLength = text.split(/[\s,.!?;:()]+/).length;
+        const totalWords = text;
+        console.log(textLength)
+        const readingTime = Math.ceil(textLength / wordsPerMinute);
+        return readingTime;
+    }
+    
+    
+    function displayPostInfo(post) {
+        const postdata = post
+        console.log(postdata)
+        const title = post.title.rendered;
+        const content = post.content.rendered;
+        const readingTime = calculateReadingTime(content);
+    
+        
+        console.log(`Título: ${title}`);
+        console.log(`Tempo de Leitura: ${readingTime} minutos`);
+    }
+    </script>

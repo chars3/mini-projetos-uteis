@@ -36,7 +36,7 @@
         }
 
         .divider-2 {
-            /* border-left: 2px solid #3057F2; */
+            border-left: 2px solid #3057F2;
             /* background-color: #7feb91; */
             width: 51px;
             height: 100%;
@@ -65,7 +65,6 @@
 
         .c-text {
             padding: 20px 0;
-            /* border: solid 1px green; */
         }
 
         .c-roadmap-wrapper:first-child .c-year-container {
@@ -232,16 +231,6 @@
             </div>
         </div>
     </div>
-<!-- 
-    <div id="app">
-        <div class="cont" @mousedown="mouseDown" @mousemove="mouseMove" @mouseup="mouseUp" @mouseleave="mouseUp">{{valor}}
-            <div v-for="(div, index) in divs" :key="index" 
-            class="nova-div"
-            :style="{ top: div.y + 'px', left: div.x + 'px' }"></div>
-        </div>
-    </div> -->
-
-    
 
     <div id="app">
         <canvas 
@@ -301,47 +290,6 @@
     }).mount('#app');
 </script>
 
-
-    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script>
-        const { createApp, ref } = Vue;
-        createApp({
-            setup() {
-                const divs = ref([]);
-                const valor = ref(0);
-                const isMouseDown = ref(false); 
-    
-                const mouseDown = (event) => {
-                    isMouseDown.value = true; 
-                    adicionarDiv(event); 
-                };
-    
-                const mouseMove = (event) => {
-                    if (isMouseDown.value) {
-                        adicionarDiv(event); 
-                    }
-                };
-    
-                const mouseUp = () => {
-                    isMouseDown.value = false;
-                };
-    
-                const adicionarDiv = (event) => {
-                    const x = event.offsetX - 5;
-                    const y = event.offsetY - 5;
-                    divs.value.push({ x, y });
-                };
-    
-                return {
-                    valor,
-                    divs,
-                    mouseDown,
-                    mouseMove,
-                    mouseUp
-                };
-            }
-        }).mount('#app');
-    </script> -->
     
 </body>
 
